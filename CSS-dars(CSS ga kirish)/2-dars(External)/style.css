@@ -1,0 +1,10 @@
+body{
+    background-image: url(./assets/pexels-valerie-sidorova-155326386-10660387.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}

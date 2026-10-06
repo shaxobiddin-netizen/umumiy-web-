@@ -1,0 +1,22 @@
+h1{
+    background-color: red;
+    width: 200px;
+    display:inline-block;
+}
+p{
+    background-color: blue;
+    width: 200px;
+    display:inline-block;
+}
+a{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+}
+button{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    display:block;
+}

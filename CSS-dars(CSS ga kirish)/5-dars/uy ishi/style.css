@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../assets/2.jpg), url(../assets/1.jpg), url(../assets/3.jpg), url(../assets/4.jpg), url(../assets/1.jpg), url(../assets/2.jpg), url(../assets/3.jpg), url(../assets/4.jpg);
+    background-repeat: no-repeat;
+    background-size: 25% 50%;
+    background-position:
+        0% 0%,
+        33.333% 0%,
+        66.666% 0%,
+        100% 0%,
+        0% 100%,
+        33.333% 100%,
+        66.666% 100%,
+        100% 100%;
+}
+
+h1 {
+    font-family: "Playwrite AU SA Guides", cursive;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+p{
+    font-family: "Playwrite AU SA Guides", cursive;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}

@@ -1,0 +1,7 @@
+body{
+    height: 100vh;
+    background-image: url(./assets/pexels-denis-tuev-75709961-10147247.jpg), url(./assets/pexels-denis-tuev-75709961-10147247.jpg);
+    background-position:left top, right top;
+    background-repeat: no-repeat;
+    background-size:50% 100% , 50% 100%;
+} 

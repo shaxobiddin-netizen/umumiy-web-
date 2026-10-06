@@ -1,0 +1,26 @@
+body{
+    background-image: url('https://www.shutterstock.com/image-illustration/3d-portrait-cartoon-doctor-using-260nw-2580023243.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.container{
+    text-align: center;
+    padding-top: 200px;
+    margin-right: 500px;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+.btn{
+    background-color: rgb(98, 145, 255);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

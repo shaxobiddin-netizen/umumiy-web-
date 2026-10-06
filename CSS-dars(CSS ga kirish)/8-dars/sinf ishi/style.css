@@ -1,0 +1,24 @@
+body{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnKqiAaWLi8sLLA4bT342runH7KNJ-4WBAW_JyTksDg&s=10);
+}
+.base{
+    border: 5px solid red;
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: rgb(138, 237, 237);
+}
+h2{
+    color: white;
+}
+.text1{
+    color: blue;
+}
+p{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
