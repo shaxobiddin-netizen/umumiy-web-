@@ -1,0 +1,26 @@
+.small {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    display: inline-block; 
+}
+
+.small2 {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    display: inline-block;
+}
+
+.small3 {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: right;
+}
+.third{
+    display: flex;
+    justify-content: right;
+    gap: 4px;
+}
