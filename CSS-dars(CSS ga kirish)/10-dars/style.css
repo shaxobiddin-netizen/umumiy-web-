@@ -1,0 +1,23 @@
+body{
+    background-color: gold;
+}
+.ota{
+    text-align: center;
+}
+.bola{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.medium{
+    height: 150px;
+}
+.short{
+    height: 100px;
+}
+.tall{
+    height: 250px;
+}
