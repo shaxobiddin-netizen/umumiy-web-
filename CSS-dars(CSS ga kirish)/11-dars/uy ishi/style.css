@@ -1,18 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    color: #000;
+    color: #1f1534;
     font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
 }
 
-.header, .box {
-    width: 90%;
-    margin: auto;
+.bg-circle {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 180px;
+    height: 180px;
+    background: rgba(84, 166, 255, 0.12);
+    border-radius: 50%;
 }
 
-.header {
+.top,
+.main-box,
+.services {
+    width: 1180px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 30px;
 }
 
 .logo img {
@@ -26,36 +45,38 @@ body {
     gap: 35px;
 }
 
-.menu h4 {
+.item {
     margin: 0;
     color: #7d7987;
     font-size: 18px;
     font-weight: 400;
 }
 
-.menu .home {
+.item.home {
     color: #1f1534;
     font-weight: 700;
-    text-shadow: 0 2px 5px #000;
 }
 
-.box {
+.main-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 70px;
+    padding-top: 42px;
 }
 
-.text {
+.left {
     width: 42%;
 }
 
-.text h1 {
+.title {
     margin: 0 0 25px;
     font-size: 48px;
+    line-height: 1.1;
+    color: #1f1534;
 }
 
-.text p {
+.text {
     margin: 0 0 48px;
     color: #7d7987;
     font-size: 20px;
@@ -71,9 +92,328 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .image {
     display: block;
     width: 55%;
+    max-width: 650px;
+}
+
+.services {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.head h2 {
+    margin: 0;
+    font-size: 36px;
+    color: #1f1534;
+    font-weight: 700;
+}
+
+.line {
+    display: inline-block;
+    width: 56px;
+    height: 2px;
+    background: #1f1534;
+    border-radius: 2px;
+}
+
+.info {
+    width: min(1040px, 100%);
+    margin: 0 auto 52px;
+    color: rgba(31, 21, 52, 0.7);
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 35px;
+}
+
+.card {
+    position: relative;
+    width: 30%;
+    padding: 30px 28px 26px;
+    min-height: 310px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(122, 152, 198, 0.12);
+    box-shadow: 0 16px 28px rgba(28, 41, 68, 0.04);
+    text-align: center;
+}
+
+.icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 104px;
+    height: 104px;
+    margin: 0 auto 22px;
+    border-radius: 26px;
+    background: rgba(118, 194, 255, 0.15);
+    box-shadow: inset 0 0 0 1px rgba(73, 148, 255, 0.08);
+}
+
+.search-icon .lens {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border: 7px solid #35b3ff;
+    border-radius: 50%;
+    top: 25px;
+    left: 26px;
+    background: rgba(53, 179, 255, 0.07);
+}
+
+.search-icon .handle {
+    position: absolute;
+    width: 24px;
+    height: 8px;
+    background: #35b3ff;
+    border-radius: 8px;
+    right: 22px;
+    bottom: 21px;
+}
+
+.pharmacy-icon .bottle {
+    position: absolute;
+    width: 32px;
+    height: 42px;
+    border: 5px solid #35b3ff;
+    border-radius: 10px 10px 14px 14px;
+    background: rgba(53, 179, 255, 0.08);
+    bottom: 24px;
+    left: 36px;
+}
+
+.pharmacy-icon .bottle-cap {
+    position: absolute;
+    width: 36px;
+    height: 12px;
+    border-radius: 6px;
+    background: #35b3ff;
+    top: 26px;
+    left: 34px;
+}
+
+.pharmacy-icon .cross {
+    position: absolute;
+    background: #35b3ff;
+    border-radius: 3px;
+}
+
+.pharmacy-icon .cross-1 {
+    width: 12px;
+    height: 4px;
+    left: 46px;
+    top: 48px;
+}
+
+.pharmacy-icon .cross-2 {
+    width: 4px;
+    height: 12px;
+    left: 50px;
+    top: 44px;
+}
+
+.consult-icon .device {
+    position: absolute;
+    width: 56px;
+    height: 44px;
+    border: 5px solid #35b3ff;
+    border-radius: 8px;
+    left: 24px;
+    top: 26px;
+    background: rgba(53, 179, 255, 0.07);
+}
+
+.consult-icon .line {
+    position: absolute;
+    height: 4px;
+    border-radius: 3px;
+    background: #35b3ff;
+    left: 34px;
+}
+
+.consult-icon .line-1 {
+    width: 22px;
+    top: 38px;
+}
+
+.consult-icon .line-2 {
+    width: 26px;
+    top: 48px;
+}
+
+.consult-icon .line-3 {
+    width: 18px;
+    top: 58px;
+}
+
+.consult-icon .user {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #35b3ff;
+    right: 20px;
+    bottom: 22px;
+    box-shadow: 0 18px 0 -6px #35b3ff;
+}
+
+.detail-icon .report {
+    position: absolute;
+    width: 48px;
+    height: 56px;
+    border: 5px solid #35b3ff;
+    border-radius: 8px;
+    left: 28px;
+    top: 22px;
+    background: rgba(53, 179, 255, 0.05);
+}
+
+.detail-icon .report-line {
+    position: absolute;
+    height: 4px;
+    border-radius: 3px;
+    background: #35b3ff;
+    left: 38px;
+}
+
+.detail-icon .line-a {
+    width: 22px;
+    top: 42px;
+}
+
+.detail-icon .line-b {
+    width: 28px;
+    top: 52px;
+}
+
+.detail-icon .line-c {
+    width: 20px;
+    top: 62px;
+}
+
+.care-icon .bag {
+    position: absolute;
+    width: 42px;
+    height: 34px;
+    border: 5px solid #35b3ff;
+    border-radius: 8px;
+    left: 31px;
+    top: 36px;
+    background: rgba(53, 179, 255, 0.05);
+}
+
+.care-icon .bag-handle {
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    border: 5px solid #35b3ff;
+    border-bottom: none;
+    border-radius: 18px 18px 0 0;
+    left: 40px;
+    top: 18px;
+}
+
+.care-icon .care {
+    position: absolute;
+    background: #35b3ff;
+    border-radius: 3px;
+}
+
+.care-icon .cross-v {
+    width: 5px;
+    height: 18px;
+    left: 50px;
+    top: 44px;
+}
+
+.care-icon .cross-h {
+    width: 18px;
+    height: 5px;
+    left: 43px;
+    top: 50px;
+}
+
+.track-icon .sheet {
+    position: absolute;
+    width: 42px;
+    height: 54px;
+    border: 5px solid #35b3ff;
+    border-radius: 8px;
+    left: 31px;
+    top: 22px;
+    background: rgba(53, 179, 255, 0.05);
+}
+
+.track-icon .sheet-line {
+    position: absolute;
+    height: 4px;
+    border-radius: 3px;
+    background: #35b3ff;
+    left: 40px;
+}
+
+.track-icon .line-a {
+    width: 22px;
+    top: 38px;
+}
+
+.track-icon .line-b {
+    width: 24px;
+    top: 48px;
+}
+
+.track-icon .line-c {
+    width: 18px;
+    top: 58px;
+}
+
+.track-icon .check {
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    border-right: 4px solid #35b3ff;
+    border-bottom: 4px solid #35b3ff;
+    right: 24px;
+    bottom: 21px;
+}
+
+.card h3 {
+    margin: 0 0 16px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #1f1534;
+}
+
+.card p {
+    margin: 0;
+    color: rgba(31, 21, 52, 0.7);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.service-card p {
+    margin: 0;
+    color: rgba(31, 21, 52, 0.7);
+    font-size: 18px;
+    line-height: 1.7;
 }
