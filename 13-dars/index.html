@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logoipsum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-bar">
+          <div class="brand" aria-label="Logoipsum home">
+            <img src="assets/Logo Color.svg" alt="Logoipsum" class="brand-logo" />
+          </div>
+
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="#subscription-index-title">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#subscription-index-title">Blog</a>
+          </nav>
+
+          <button class="primary-btn nav-btn">Get Started</button>
+        </div>
+      </header>
+
+      <main class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>
+              Grow your
+              <span>subscription</span>
+              business
+            </h1>
+
+            <p>
+              Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business
+              end-to-end.
+            </p>
+
+            <div class="cta-row">
+              <button class="primary-btn large">Get Started</button>
+              <button class="secondary-btn">Try</button>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img src="assets/Hero 3D.png" alt="Illustration of a person using a subscription product" />
+          </div>
+        </div>
+      </main>
+
+      <section class="subscription-index" aria-labelledby="subscription-index-title">
+        <div class="container index-inner">
+          <div class="index-visual">
+            <img
+              src="assets/Content Image 02 (1).svg"
+              alt="3D illustration of an analyst holding a calculator beside a pie chart"
+            />
+          </div>
+
+          <div class="index-content">
+            <h2 id="subscription-index-title">Subscription index</h2>
+            <form class="email-form">
+              <label class="visually-hidden" for="subscription-email">Email</label>
+              <input id="subscription-email" type="email" placeholder="Email" />
+              <button type="submit">Try</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="pricing" aria-labelledby="pricing-title">
+        <div class="pricing-content">
+          <h1 id="pricing-title">Get the right plan<br />for future</h1>
+
+          <div class="pricing-cards">
+            <article class="pricing-card">
+              <p class="plan-name">Starter</p>
+              <h2>Free</h2>
+              <ul>
+                <li>1 Website</li>
+                <li>5 GB Hosting</li>
+                <li>Limited Support</li>
+              </ul>
+              <a class="plan-button" href="#subscription-index-title">Get Started</a>
+            </article>
+
+            <article class="pricing-card pricing-card-featured" id="premium-plan">
+              <p class="plan-name">Premium</p>
+              <h2><span>$29</span><small>/month</small></h2>
+              <ul>
+                <li>10 Website</li>
+                <li>15 GB Hosting</li>
+                <li>Premium Support</li>
+              </ul>
+              <a class="plan-button" href="#subscription-index-title">Get Started</a>
+            </article>
+
+            <article class="pricing-card">
+              <p class="plan-name">Enterprise</p>
+              <h2><span>$49</span><small>/month</small></h2>
+              <ul>
+                <li>Unlimited Website</li>
+                <li>50 GB Hosting</li>
+                <li>Premium Support</li>
+              </ul>
+              <a class="plan-button" href="#subscription-index-title">Get Started</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <a class="footer-brand" href="index.html" aria-label="Logoipsum home">
+            <img src="assets/Logo Color.svg" alt="Logoipsum" />
+          </a>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#subscription-email">Support</a>
+            <a href="#premium-plan">Premium</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#subscription-index-title">Blog</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
